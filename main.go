@@ -1,12 +1,7 @@
 package main
 
 func main() {
-	// quan bich
-	cards := newDeck()
-
+	cards := newDeckFromFile("my_cards")
+	cards.shuffle()
 	cards.print()
-}
-
-func newCard() string {
-	return "Five of Diamonds"
 }
