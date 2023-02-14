@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
-
 func main() {
 	// quan bich
-	var card string = "Ace of Spades"
-	fmt.Println(card)
+	cards := newDeck()
+
+	cards.print()
+}
+
+func newCard() string {
+	return "Five of Diamonds"
 }
